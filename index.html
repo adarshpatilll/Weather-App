@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- External Links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="search-box">
+                <input type="text" placeholder="Enter your location" class="input-box">
+
+                <button class="fa-solid fa-magnifying-glass" id="searchBtn"></button>
+            </div>
+        </div>
+
+        <div class="location-not-found">
+            <h1 id="error-title">Sorry, Location not found!!!</h1>
+            <img src="/Weather App/assets/error.gif" alt="404 Error">
+        </div>
+
+        <div class="weather-body">
+            <img src="/Weather App/assets/cloudy.gif" alt="Weather Image" class="weather-img">
+
+            <div class="weather-box">
+                <p class="temperature">0 <sup>°C</sup></p>
+                <p class="description">light rain</p>
+            </div>
+
+            <div class="weather-details">
+                <div class="humidity">
+                    <i class="fa-sharp fa-solid fa-droplet"></i>
+                    <div class="text">
+                        <span id="humidity">45%</span>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <span id="wind-speed">12 Km/H</span>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="weather-details">
+                <div class="city-name-class">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div class="text">
+                        <span id="city-name">Nagpur</span>
+                    </div>
+                </div>
+
+                <div class="pressure-class">
+                    <i class="fa-solid fa-gauge"></i>
+                    <div class="text">
+                        <span id="pressure">1015 hPa</span>
+                        <p>Pressure</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/595a890311.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
